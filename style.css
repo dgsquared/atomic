@@ -8,3 +8,23 @@ html, body {
 canvas {
   display: block;
 }
+
+footer {
+  font-family: "Adobe Garamond Pro", serif;
+  font-weight: 700;
+  font-style: italic;
+  color: white;
+  max-width: 100%;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #FFF;
+  height: 4rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+h3 {
+  color: #FFFFFF;
+  text-decoration: none;
+}
