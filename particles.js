@@ -33,8 +33,12 @@ class Particle {
 // an array to add multiple particles
 let particles = [];
 
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
+
 function setup() {
-  createCanvas(720, 400);
+  createCanvas(windowWidth, windowHeight);
   for(let i = 0;i<width/3;i++){
     particles.push(new Particle());
   }

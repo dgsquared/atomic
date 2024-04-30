@@ -3,11 +3,15 @@ let points
 
 
 function preload() {
-  font = loadFont('Inconsolata-Bold.ttf')
+  font = loadFont('Adobe Garamond Pro')
 }
 
-function setup() {
-  createCanvas(1200, 600)
+function windowResized() {
+    resizeCanvas(windowWidth, windowHeight);
+  }
+  
+  function setup() {
+    createCanvas(windowWidth, windowHeight);
   textAlign(CENTER, CENTER)
    
   points = font.textToPoints('Behold', 130, 330, 180, {
