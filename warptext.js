@@ -12,9 +12,9 @@ function windowResized() {
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  textAlign(CENTER);
+  //textAlign(CENTER); how do i center the warping text?
    
-  points = font.textToPoints('Behold', width / 4.5, height/2 , 250, {
+  points = font.textToPoints('Behold', width/4 , height/2 , height / 3, {
     sampleFactor: 0.1,
     simplifyThreshold: 0
   })
@@ -62,7 +62,8 @@ function draw() {
 
   fill('#FFFFFF');
   textAlign(CENTER);
-    textSize(50);
+    textSize(40);
     textFont('Adobe Garamond Pro');
-    text('our atmosphere refuses to enfold us', width / 2, height * 4.5/6);
+    text('a gaze that admits no ray of light', width * 2/5, height * 4.5/6);
+    text('overcome by treachery\'s grief', width * 3/5, height * 5/6);
 }

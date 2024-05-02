@@ -27,7 +27,7 @@
     textAlign(CENTER);
     textSize(50);
     textFont('Adobe Garamond Pro');
-    text('our atmosphere refuses to enfold us', width / 2, height * 5/6);
+    text('god\'s creation rebuffs our assimilation', width / 2, height * 5/6);
     if (mouseIsPressed) {
         wiggle(); 
       }
@@ -35,7 +35,7 @@
     }
     
     function wiggle() {
-      text('our atmosphere refuses to enfold us', x, height * 5/6); 
+      text('god\'s creation rebuffs our assimilation', x, height * 5/6); 
       
       if (x > width / 2) {
         speed = -5;

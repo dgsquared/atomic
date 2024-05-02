@@ -54,11 +54,13 @@ class Particle {
         textAlign(CENTER);
     textSize(30);
     textFont('Adobe Garamond Pro');
-    text('memories of the atomic bomb', width / 2, height * 2/6);
-    text('原爆の記憶', width / 2, height * 2.5/6);
-    text('original text by kenji endo', width / 2, height * 4/6);
-    text('coded by diego gomez', width / 2, height * 3/6);
-    textSize(15);
-    text('nuclear test footage courtesy of lawrence livermore national laboratories', width / 2, height * 4.5/6);
+    text('behold, above our skeptical laughter', width / 2, height * 2.5/6);
+    
+
+    if (mouseY > height * 3/6) {
+        fill('#FFFFFF');
+        text('a sword of rage poised to strike', width / 2, height * 3.5/6);
+        filter(BLUR, 1);
+    }
     }
 

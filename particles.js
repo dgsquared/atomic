@@ -58,5 +58,5 @@ function draw() {
   text('原爆の記憶', width / 2, height * 2.5/6);
   textSize(27);
   textFont('Adobe Garamond Pro');
-  text('warning: site may contain triggering imagery', width / 2, height * 5/6);
+  text('warning: site contains sensitive imagery', width / 2, height * 5/6);
 }
