@@ -14,7 +14,7 @@ function windowResized() {
     textAlign(CENTER);
     textSize(50);
     textFont('Adobe Garamond Pro');
-    text('every living creature years to gnaw our bones', width / 2, height * 4/6);
+    text('every living creature yearns to gnaw our bones', width / 2, height * 4/6);
     text('eyes glint in vengeance, urging us to suicide', width / 2, height * 5/6);
     
     push();
