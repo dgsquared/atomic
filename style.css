@@ -10,6 +10,7 @@ canvas {
 }
 
 footer {
+  background-color: #000000;
   font-family: "Adobe Garamond Pro", serif;
   font-weight: 700;
   font-style: italic;
@@ -29,3 +30,7 @@ a {
   text-decoration: none;
 }
 
+#gif {
+  background-image: url(fourtwo.gif);
+  background-size: cover;
+}
