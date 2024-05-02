@@ -28,9 +28,10 @@ footer {
 a {
   color: #FFFFFF;
   text-decoration: none;
+  font-family: "Adobe Garamond Pro", serif;
 }
 
-#gif {
+/*#gif {
   background-image: url(fourtwo.gif);
   background-size: cover;
 }

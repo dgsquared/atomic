@@ -14,7 +14,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   //textAlign(CENTER); how do i center the warping text?
    
-  points = font.textToPoints('Behold', width/4 , height/2 , height / 3, {
+  points = font.textToPoints('Behold', width/3.75 , height/2 , height / 3, {
     sampleFactor: 0.1,
     simplifyThreshold: 0
   })
