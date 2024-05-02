@@ -39,7 +39,7 @@ class Particle {
     
     function setup() {
       createCanvas(windowWidth, windowHeight);
-      for(let i = 0;i<width/3;i++){
+      for(let i = 0;i<width/2;i++){
         particles.push(new Particle());
       }
     }
@@ -50,4 +50,14 @@ class Particle {
         particles[i].createParticle();
         particles[i].moveParticle();
       }
+
+        textAlign(CENTER);
+    textSize(30);
+    textFont('Adobe Garamond Pro');
+    text('memories of the atomic bomb', width / 2, height * 2/6);
+    text('原爆の記憶', width / 2, height * 2.5/6);
+    text('original text by kenji endo', width / 2, height * 4/6);
+    text('coded by diego gomez', width / 2, height * 3/6);
+    textSize(15);
+    text('nuclear test footage courtesy of lawrence livermore national laboratories', width / 2, height * 4.5/6);
     }

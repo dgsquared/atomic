@@ -50,4 +50,13 @@ function draw() {
     particles[i].createParticle();
     particles[i].moveParticle();
   }
+
+  textAlign(CENTER);
+  textSize(40);
+  textFont('Adobe Garamond Pro');
+  text('memories of the atomic bomb', width / 2, height * 2/6);
+  text('原爆の記憶', width / 2, height * 2.5/6);
+  textSize(27);
+  textFont('Adobe Garamond Pro');
+  text('warning: site may contain triggering imagery', width / 2, height * 5/6);
 }
