@@ -1,6 +1,6 @@
-let font
-let points
-
+let font;
+let points;
+let fadeOpacity = 0;
 
 // this class describes the properties of a single particle.
 class Particle {
@@ -98,7 +98,7 @@ function draw() {
     circle(point.x + nx, point.y + ny, 5)
   })
 
-  fill('#FFFFFF');
+  fill(255, 255, 255, fadeOpacity);
   textAlign(CENTER);
     textSize(40);
     textFont('Adobe Garamond Pro');
@@ -109,4 +109,9 @@ function draw() {
       particles[i].createParticle();
       particles[i].moveParticle();
     }
+push();
+  if (fadeOpacity < 255) {
+    fadeOpacity += .5;
+  }
+pop();
 }
