@@ -3,21 +3,22 @@ let points
 
 
 function preload() {
-  font = loadFont('Adobe Garamond Pro')
+  font = loadFont('Inconsolata-Bold.ttf');
 }
 
 function windowResized() {
-    resizeCanvas(windowWidth, windowHeight);
-  }
-  
-  function setup() {
-    createCanvas(windowWidth, windowHeight);
-  textAlign(CENTER, CENTER)
+  resizeCanvas(windowWidth, windowHeight);
+}
+
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+  textAlign(CENTER);
    
-  points = font.textToPoints('Behold', 130, 330, 180, {
+  points = font.textToPoints('Behold', width / 4.5, height/2 , 250, {
     sampleFactor: 0.1,
     simplifyThreshold: 0
   })
+
 }
 
 function draw() {
@@ -58,4 +59,10 @@ function draw() {
     const ny = movement.y
     circle(point.x + nx, point.y + ny, 5)
   })
+
+  fill('#FFFFFF');
+  textAlign(CENTER);
+    textSize(50);
+    textFont('Adobe Garamond Pro');
+    text('our atmosphere refuses to enfold us', width / 2, height * 4.5/6);
 }
