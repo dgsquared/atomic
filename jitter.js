@@ -24,7 +24,7 @@
     //whenever i make the background transparent my text disappears, and if i put (0, 0) it makes the text look weird
     noStroke();
     strokeWeight();
-    fill('#FFFFFF');
+    fill(255, 255, 255);
     //imageMode(CENTER);
     //image(gif, width/2, height/2)
     textAlign(CENTER);
@@ -32,9 +32,17 @@
     textFont('Adobe Garamond Pro');
     text('god\'s creation rebuffs our assimilation', width / 2, height * 5/6);
     wiggle(); 
+
+    //push();
+      //if (fadeOpacity < 255) {
+        //fadeOpacity += .5;
+      //}
+    //pop();
+
   }
     
     function wiggle() {
+      //fill(255, 255, 255, fadeOpacity);
       text('god\'s creation rebuffs our assimilation', x, height * 5/6); 
       
       if (x > width / 2) {
