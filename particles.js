@@ -59,4 +59,6 @@ function draw() {
   textSize(27);
   textFont('Adobe Garamond Pro');
   text('warning: site contains sensitive imagery', width / 2, height * 5/6);
+  textSize(15);
+    text('use the site navigation bar below', width / 2, height * 5.5/6);
 }

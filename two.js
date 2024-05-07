@@ -57,7 +57,7 @@ class Particle {
     text('behold, above our skeptical laughter', width / 2, height * 2.5/6);
     
 
-    if (mouseY > height * 3/6) {
+    if (mouseY < height * 2.5/6) {
         fill('#FFFFFF');
         text('a sword of rage poised to strike', width / 2, height * 3.5/6);
         filter(BLUR, 1);

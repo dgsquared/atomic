@@ -42,7 +42,6 @@
   }
     
     function wiggle() {
-      //fill(255, 255, 255, fadeOpacity);
       text('god\'s creation rebuffs our assimilation', x, height * 5/6); 
       
       if (x > width / 2) {
